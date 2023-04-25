@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { Image } from 'react-bootstrap';
+import banner from './banner.jpg';
 
-function App() {
+function Example() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Button variant="primary" onClick={handleShow} size="lg" className="position-absolute top-50 start-50 translate-middle">
+        Open Modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose} dialogClassName="main-modal">
+        <Modal.Header closeButton closeVariant="white">
+          <Modal.Title>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Image src={banner} fluid></Image>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose} >
+            ითამაშე
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
 
-export default App;
+export default Example;
