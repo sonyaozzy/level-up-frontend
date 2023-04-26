@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { Image } from 'react-bootstrap';
-import banner from './banner.jpg';
+import MainTabs from './Components/MainTabs';
 
 function Example() {
   const [show, setShow] = useState(false);
@@ -13,16 +12,24 @@ function Example() {
   return (
     <>
       <Button variant="primary" onClick={handleShow} size="lg" className="position-absolute top-50 start-50 translate-middle">
-        Open Modal
+        Open Pop-up
       </Button>
 
       <Modal show={show} onHide={handleClose} dialogClassName="main-modal">
-        <Modal.Header closeButton closeVariant="white">
-          <Modal.Title>
+        <Modal.Header className="background-image" closeButton closeVariant="white">
+          <Modal.Title >
+            <div>
+              <div className="dates">
+                <span className="slots">სლოტები</span>
+                <span>10 იანვარი - 12 მარტი</span>
+              </div>
+            </div>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Image src={banner} fluid></Image>
+          <p className="text-20px">მოიპოვე მრავალფეროვანი პრიზები და 10 საგზურიდან ერთ-ერთი</p>
+          <p className='text-16px'>მოხვდი პოკერის ფესტივალზე მალტაში</p>
+          <MainTabs/>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose} >

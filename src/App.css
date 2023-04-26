@@ -17,9 +17,8 @@ body {
 
 .modal-footer {
   border-top: 2px solid #EF5A21;
-  display:flex;
-    justify-content:center;
-    align-item:center
+  display: flex;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -27,8 +26,8 @@ body {
   --bs-btn-bg: #F05A22;
   --bs-btn-border-color: #F05A22;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-bg: #F05A22;
+  --bs-btn-hover-border-color: #F05A22;
   --bs-btn-focus-shadow-rgb: 49,132,253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #F05A22;
@@ -37,4 +36,211 @@ body {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #7d7d7d;
   --bs-btn-disabled-border-color: #7d7d7d;
+}
+
+ .slots {
+  width: 81px;
+  height: 25px;
+  border-radius: 15px;
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  font: 13px Helvetica medium;
+  text-align: left;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.dates {
+  width: 280px;
+  height: 34px;
+  border-radius: 20px;
+  border-color: rgba(37, 41, 43, 0.9);
+  background-color: rgba(37, 41, 43, 0.9);
+  font: 15px Helvetica bold;
+  padding: 8px 15px;
+}
+
+.background-image {
+  width: 940px;
+  height: 350px;
+  background-image: url(./banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: start;
+}
+
+.text-20px {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.text-16px {
+  font-size: 16px;
+  opacity: 90%;
+  margin: 10px 0;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  --bs-nav-tabs-link-active-color:white;
+  --bs-nav-tabs-link-active-bg: #EF5A21;
+  --bs-nav-tabs-link-active-border-color: #EF5A21;
+  align-items: center;
+}
+
+.nav-tabs .nav-link {
+  background-color: #2C3234;
+  color: white;
+  border: #2C3234;
+  width: 292px;
+  height: 77px;
+  border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+  border-radius: 10px;
+  width: 270px;
+  height: 90px;
+}
+
+#main-tabs-tab-Cash-Games {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font: 18px bold;
+}
+
+#main-tabs-tab-Final-Stage {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#main-tabs-tab-Cash-Games::before {
+  content: '1 - 29 აპრილი';
+  font: 10px regular;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#main-tabs-tab-Spring-Series::before {
+  content: '13 - 29 აპრილი';
+  font: 10px regular;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#main-tabs-tab-Final-Stage::before {
+  content: '30 აპრილი ';
+  font: 10px regular;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.table {
+  table-layout: fixed;
+  display: block;
+  width: 806px;
+  overflow: auto;
+  height: 455px;
+  background-color: #25292B;
+  color: white;
+  border-radius: 10px;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.custom-head {
+  display: block;
+  width: 742px;
+  height: 56px;
+  background-color: #25292B;
+  padding: 5px 25px;
+  color: rgba(125, 125, 125, 0.9);
+  font-size: 13px;
+  margin-left: 32px; 
+  margin-right: 32px;
+}
+
+.custom-tr {
+  display: block;
+  width: 742px;
+  height: 56px;
+  background-color: #1E2122;
+  border: solid;
+  border-color: #2C3234;
+  border-width: 2px;
+  border-radius: 40px;
+  margin: 1px;
+  padding: 5px 25px;
+  font-size: 13px;
+  margin-left: 32px; 
+  margin-right: 32px;
+}
+
+.custom-place {
+  width: 80px;
+  text-align: center;
+}
+
+.custom-voucher {
+  width: 414px;
+  text-align: center;
+}
+
+.custom-prize {
+  width: 248px;
+  text-align: center;
+}
+
+.place-round {
+  width: 28px;
+  height: 28px;
+  background-color: #2C3234;
+  border-radius: 100%;
+  padding: 5px 0;
+}
+
+.custom-tops {
+  width: 854px;
+  height: 1758px;
+  background-color: #171718;
+  border: solid;
+  border-color: rgba(37, 41, 43, 1);
+  border-width: 4px;
+  border-radius: 15px;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.custom-table-name-div {
+  height: 70px;
+  background-color: #2C3234;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+
+}
+
+.custom-table-name {
+  font-size: 18pt;
+  font-weight: bold;
+  width: 300px;
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 15px;
+}
+
+.top20-text {
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-light {
+  --bs-btn-bg: none;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: none;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-active-color: none;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
 }
